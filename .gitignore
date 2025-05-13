@@ -1,0 +1,35 @@
+# Python virtual environments
+env/
+venv/
+.venv/
+
+# Large files and models
+*.pt
+*.h5
+*.pkl
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Python bytecode
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Logs and temp files
+*.log
+*.tmp
+*.swp
+
+# IDE/editor config
+.vscode/
+.idea/
+
+# System files
+.DS_Store
+Thumbs.db

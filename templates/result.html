@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نتائج النموذج</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            padding: 40px;
+            background-color: #fff0f5;
+        }
+
+        h1 {
+            color: #e91e63;
+            margin-bottom: 30px;
+        }
+
+        .result {
+            margin-top: 30px;
+            font-size: 18px;
+            color: #880e4f;
+        }
+
+        img {
+            margin-top: 20px;
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            border: 2px solid #f8bbd0;
+        }
+
+        .back-btn {
+            margin-top: 30px;
+            padding: 10px 25px;
+            background-color: #e91e63;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .back-btn:hover {
+            background-color: #c2185b;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>نتائج النموذج</h1>
+
+    <h2>الصورة المدخلة:</h2>
+    <img src="data:image/jpeg;base64,{{ image_result }}" alt="Uploaded Image">
+
+    <div class="result">
+        <h2>النتائج:</h2>
+        <ul>
+            <li>{{ result }}</li>
+        </ul>
+    </div>
+
+    <a href="/" class="back-btn">رجوع إلى الصفحة الرئيسية</a>
+
+</body>
+</html>
